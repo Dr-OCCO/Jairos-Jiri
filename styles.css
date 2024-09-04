@@ -1,0 +1,188 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('images/5.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #e44d26;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #d43e1d;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+    background: #fff;
+    margin: 1rem 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Event cards */
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.event-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    width: calc(50% - 1rem);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem;
+    background: #e44d26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #d43e1d;
+}
+
+/* Donation section */
+.donation-form {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.donation-form input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.donation-form button {
+    flex-shrink: 0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .event-card {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
